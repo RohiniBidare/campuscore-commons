@@ -1,70 +1,56 @@
-import streamlit as st
 import pandas as pd
+import streamlit as st
 
-def calculate_priority_score(user_id, urgency_level="Medium", days_since_last_booking=5):
+def calculate_priority_score(request_data: dict):
     """
-    Calculates an explainable allocation score (0 to 100) based on fairness rules:
-    Score = (Urgency * 0.4) + (Quota_Remaining * 0.35) - (Strikes * 15) + (Days_Since_Last * 0.25)
+    Computes an explainable anti-monopoly fairness priority score (0 to 100).
+    Safely resolves user metadata and prevents Arrow/Pandas comparison errors.
     """
-    users_df = st.session_state.users
-    user = users_df[users_df["user_id"] == user_id]
+    user_id = str(request_data.get("user_id", ""))
+    project_tier = str(request_data.get("project_tier", "Standard"))
     
-    if user.empty:
-        return 50.0, "Standard user baseline applied."
+    # 1. Resolve base user metrics safely from request or session_state
+    monthly_quota = float(request_data.get("monthly_quota_hours", 40.0) or 40.0)
+    used_quota = float(request_data.get("used_quota_hours", 0.0) or 0.0)
+    strikes = int(request_data.get("penalty_strikes", 0) or 0)
     
-    user_row = user.iloc[0]
-    total_quota = float(user_row.get("monthly_quota_hours", 40))
-    used_quota = float(user_row.get("used_quota_hours", 0))
-    strikes = int(user_row.get("penalty_strikes", 0))
-    quota_remaining = max(0.0, total_quota - used_quota)
-    
-    urgency_map = {"Low": 20.0, "Medium": 50.0, "High": 85.0, "Critical_Thesis": 100.0}
-    urgency_val = urgency_map.get(urgency_level, 50.0)
-    
-    score = (
-        (urgency_val * 0.4) +
-        (quota_remaining * 0.35) -
-        (strikes * 15.0) +
-        (min(days_since_last_booking, 30) * 0.25)
-    )
-    score = max(0.0, min(100.0, round(score, 2)))
-    
-    explanation = (
-        f"Score {score}/100: "
-        f"{quota_remaining:.1f}h quota remaining, "
-        f"{strikes} penalty strike(s), "
-        f"{urgency_level} stated urgency."
-    )
-    
-    return score, explanation
+    # If not passed directly, lookup safely in users DataFrame
+    users_df = st.session_state.get("users", pd.DataFrame())
+    if not users_df.empty and "user_id" in users_df.columns:
+        matched = users_df[users_df["user_id"].astype(str) == user_id]
+        if not matched.empty:
+            row = matched.iloc[0]
+            monthly_quota = float(row.get("monthly_quota_hours", monthly_quota) or 40.0)
+            used_quota = float(row.get("used_quota_hours", used_quota) or 0.0)
+            strikes = int(row.get("penalty_strikes", strikes) or 0)
 
-def add_to_waitlist(resource_id, slot_start, slot_end, user_id, urgency_level="Medium"):
-    """
-    Evaluates fairness and appends the user to the waitlist queue with priority ranking.
-    """
-    score, reason = calculate_priority_score(user_id, urgency_level)
-    waitlist_df = st.session_state.waitlist
-    
-    current_queue = waitlist_df[
-        (waitlist_df["resource_id"] == resource_id) &
-        (waitlist_df["booking_slot_start"] == slot_start)
-    ]
-    position = len(current_queue) + 1
-    
-    new_waitlist_id = f"WL-{len(waitlist_df) + 1:04d}"
-    new_entry = {
-        "waitlist_id": new_waitlist_id,
-        "resource_id": resource_id,
-        "booking_slot_start": slot_start,
-        "booking_slot_end": slot_end,
-        "user_id": user_id,
-        "priority_score": score,
-        "queue_position": position,
-        "explainable_reason": reason
+    # 2. Quota Fairness Factor (0 - 40 points)
+    # Rewards borrowers who have not exhausted their monthly allotment
+    quota_ratio = used_quota / monthly_quota if monthly_quota > 0 else 1.0
+    quota_ratio = min(max(quota_ratio, 0.0), 1.0)
+    quota_score = (1.0 - quota_ratio) * 40.0
+
+    # 3. Academic Urgency Multiplier (0 - 40 points)
+    tier_scores = {
+        "Critical_Thesis": 40.0,
+        "Urgent_Capstone": 30.0,
+        "Standard": 20.0,
+        "Low": 10.0
     }
-    
-    st.session_state.waitlist = pd.concat(
-        [st.session_state.waitlist, pd.DataFrame([new_entry])],
-        ignore_index=True
+    urgency_score = tier_scores.get(project_tier, 20.0)
+
+    # 4. Reputation & Strike Penalty Deduction (0 - 20 points)
+    reputation_score = 20.0 - (strikes * 10.0)
+    reputation_score = max(reputation_score, 0.0)
+
+    # Final Composite Score
+    total_score = round(quota_score + urgency_score + reputation_score, 2)
+    total_score = min(max(total_score, 0.0), 100.0)
+
+    breakdown = (
+        f"Quota Factor: +{quota_score:.1f}/40 | "
+        f"Urgency ({project_tier}): +{urgency_score:.1f}/40 | "
+        f"Discipline: +{reputation_score:.1f}/20 (Strikes: {strikes})"
     )
-    return position, score, reason
+
+    return total_score, breakdown
