@@ -20,3 +20,4 @@ Academic and institutional laboratories suffer from structural resource friction
 ---
 
 ## System Architecture & Workflow
+## 🏗️ System Architecture & Workflow
