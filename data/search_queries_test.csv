@@ -1,0 +1,21 @@
+query_id,query_text,expected_resource_ids,user_intent_category
+T001,Need high-magnification imaging for live cell staining,R001,Direct_Lookup
+T002,Sub-millimeter CNC cutting for aluminum plate,R002,Direct_Lookup
+T003,Compute node with at least 80GB VRAM,R003,Direct_Lookup
+T004,"Need a class 1000 room for lithography, trained operator available",R004,Direct_Lookup
+T005,Need to film a fast impact at 10k fps or more,R005,Direct_Lookup
+T006,Looking for sterile cell culture automation for a pilot run,R006,Direct_Lookup
+T007,Cheap way to print a resin prototype enclosure,R007,Low_Cost_Filtering
+T008,Cryo sample prep station for electron microscopy,R008,Direct_Lookup
+T009,Need to test antenna pattern inside an RF shielded chamber,R009,Direct_Lookup
+T010,Scan a stack of stained pathology slides digitally,R010,Direct_Lookup
+T011,"Microscope slot tomorrow morning, anything with live-cell imaging?",R001;R010,Need_Alternative
+T012,"Our budget is low, can I use the cheapest machine for a small plastic part?",R007,Low_Cost_Filtering
+T013,GPU with lots of VRAM for a transformer fine-tune,R003,Direct_Lookup
+T014,Need a supervised tool to machine a precise metal fixture,R002,Need_Alternative
+T015,Need cleanroom access but my gowning badge expired,R004,Direct_Lookup
+T016,Can I use the confocal without the advanced workshop?,R001,Direct_Lookup
+T017,Any camera for high-speed motion analysis under 20 credits per hour?,R005,Low_Cost_Filtering
+T018,Need a microscope alternative because the cryo prep station is down,R001;R010,Need_Alternative
+T019,"Need to image a stained sample, no need for confocal resolution",R010,Need_Alternative
+T020,"Find me a machine for aluminum bracket cutting, I have CNC training",R002,Direct_Lookup

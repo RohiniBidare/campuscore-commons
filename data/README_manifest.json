@@ -1,0 +1,15 @@
+{
+  "row_counts": {
+    "users": 12,
+    "resources": 10,
+    "eligibility_requirements": 22,
+    "certificate_samples": 20,
+    "bookings": 20,
+    "waitlist": 4,
+    "checkins": 5,
+    "incidents": 3,
+    "audit_log": 20,
+    "search_queries_test": 20
+  },
+  "validation": "foreign keys validated; booking chronology checked; intended microscope contention captured as approved vs waitlisted; all rejected bookings have reasons; damaged return has incident; audit log sorted chronologically"
+}

@@ -1,0 +1,21 @@
+booking_id,resource_id,user_id,purpose_summary,start_time,end_time,allocated_via,status,rejection_reason
+B001,R001,U006,Confocal imaging of live-cell staining pilot,2026-10-29T10:00:00+05:30,2026-10-29T12:00:00+05:30,Direct_Approval,Approved,
+B002,R001,U004,Microscopy comparison for a faculty-led assay,2026-10-29T10:00:00+05:30,2026-10-29T12:00:00+05:30,Waitlist_Priority,Waitlisted,
+B003,R002,U005,Mill an aluminium fixture for tensile test coupons,2026-10-30T09:00:00+05:30,2026-10-30T11:00:00+05:30,Direct_Approval,Approved,
+B004,R003,U008,Fine-tune a segmentation model on a high-memory GPU node,2026-10-28T13:00:00+05:30,2026-10-28T17:00:00+05:30,Direct_Approval,In_Custody,
+B005,R004,U009,Pattern test structures on silicon coupons,2026-10-31T10:00:00+05:30,2026-10-31T12:00:00+05:30,Direct_Approval,Rejected,Required Cleanroom Gowning & Contamination Control certificate is expired.
+B006,R005,U010,Capture high-speed impact footage for incubator prototype,2026-11-02T13:00:00+05:30,2026-11-02T15:00:00+05:30,Direct_Approval,Approved,
+B007,R006,U004,Cell culture workstation pilot for assay repeatability,2026-10-27T09:00:00+05:30,2026-10-27T11:00:00+05:30,Direct_Approval,Returned_Clean,
+B008,R007,U012,Print a resin enclosure for a sensor board,2026-10-27T14:00:00+05:30,2026-10-27T16:00:00+05:30,Direct_Approval,Returned_Clean,
+B009,R008,U006,Prepare cryo samples for microscopy,2026-11-03T10:00:00+05:30,2026-11-03T12:00:00+05:30,Direct_Approval,Cancelled,Resource temporarily unavailable pending maintenance.
+B010,R009,U009,Measure antenna chamber response for a capstone project,2026-11-04T09:00:00+05:30,2026-11-04T11:00:00+05:30,Waitlist_Priority,Waitlisted,
+B011,R010,U006,Scan stained teaching slides for a pathology comparison,2026-10-26T10:00:00+05:30,2026-10-26T12:00:00+05:30,Direct_Approval,Returned_Clean,
+B012,R001,U008,Repeat confocal scan after calibration adjustment,2026-10-29T12:00:00+05:30,2026-10-29T14:00:00+05:30,Waitlist_Priority,Waitlisted,
+B013,R002,U007,Cut bracket geometry on 5-axis mill,2026-11-05T10:00:00+05:30,2026-11-05T11:00:00+05:30,Direct_Approval,Rejected,User is suspended and has no valid CNC Mill Safety Certification.
+B014,R003,U009,Benchmark an 80GB-plus VRAM model workload,2026-11-06T18:00:00+05:30,2026-11-06T22:00:00+05:30,Direct_Approval,Approved,
+B015,R004,U005,Develop a lithography alignment calibration sample,2026-11-07T09:00:00+05:30,2026-11-07T11:00:00+05:30,Supervised_Override,Approved,
+B016,R005,U010,Record a high-frame-rate material fracture test,2026-11-08T10:00:00+05:30,2026-11-08T12:00:00+05:30,Direct_Approval,Approved,
+B017,R006,U006,Run repeatability checks on sterile cell handling,2026-11-09T13:00:00+05:30,2026-11-09T15:00:00+05:30,Direct_Approval,Requested,
+B018,R007,U007,Print a small prototype after workshop access review,2026-11-10T11:00:00+05:30,2026-11-10T13:00:00+05:30,Direct_Approval,Cancelled,User cancelled before approval; quota not deducted.
+B019,R001,U006,Reserve microscope for follow-up staining series,2026-11-11T14:00:00+05:30,2026-11-11T16:00:00+05:30,Waitlist_Priority,Waitlisted,
+B020,R009,U010,RF chamber validation for a wireless prototype,2026-11-12T09:00:00+05:30,2026-11-12T11:00:00+05:30,Direct_Approval,Disputed,Late return and possible connector damage under review.

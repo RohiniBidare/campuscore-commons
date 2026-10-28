@@ -1,0 +1,5 @@
+waitlist_id,resource_id,booking_slot_start,booking_slot_end,user_id,priority_score,queue_position,explainable_reason
+W001,R001,2026-10-29T10:00:00+05:30,2026-10-29T12:00:00+05:30,U004,58.5,1,Assigned #1: faculty-led assay has urgent sample window; microscope conflict resolved by approved request B001.
+W002,R001,2026-10-29T12:00:00+05:30,2026-10-29T14:00:00+05:30,U008,78.0,1,Assigned #1: only 4 monthly hours used; repeat scan required for thesis milestone.
+W003,R009,2026-11-04T09:00:00+05:30,2026-11-04T11:00:00+05:30,U009,91.0,1,Assigned #1: zero hours used this cycle; capstone submission within 48 hours.
+W004,R001,2026-11-11T14:00:00+05:30,2026-11-11T16:00:00+05:30,U006,64.0,1,Assigned #1: graduate researcher has a time-bound repeat experiment and valid imaging credentials.

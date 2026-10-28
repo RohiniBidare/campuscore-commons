@@ -1,0 +1,11 @@
+resource_id,name,category,department_owner,manager_id,location,hourly_cost_credits,requires_supervision,min_badge_level,daily_start_time,daily_end_time,max_consecutive_hours,maintenance_status
+R001,Confocal Laser Scanning Microscope,Microscopy,Advanced Imaging,U002,Research Tower 4 / Imaging Suite 2,18,true,L3_Expert,09:00,18:00,4,Available
+R002,5-Axis CNC Mill,Rapid_Prototyping,Advanced Fabrication,U003,Engineering Workshop / Bay C,22,true,L3_Expert,08:30,17:00,3,Available
+R003,8x NVIDIA H100 GPU Node,Compute_Cluster,Research Computing,U002,Data Centre / Cluster Pod H,30,false,L2_Trained,00:00,23:59,12,Available
+R004,Class 1000 Cleanroom Lithography Booth,Cleanroom,NanoFabrication,U003,NanoFab Building / Cleanroom 1,28,true,L3_Expert,09:00,16:00,3,Available
+R005,High-Speed Photron Camera,Media_Studio,Experimental Mechanics,U003,Dynamics Lab / Optical Bench,16,true,L2_Trained,09:00,18:00,5,Available
+R006,Automated Cell Culture Workstation,Wet_Lab,Biomedical Engineering,U002,Biotech Block / Sterile Suite,20,true,L3_Expert,09:00,17:00,4,Available
+R007,Desktop SLA 3D Printer Farm,Rapid_Prototyping,Advanced Fabrication,U003,Makerspace / Print Room,8,false,L1_SelfPaced,08:00,20:00,6,Available
+R008,Cryo-Electron Sample Preparation Station,Microscopy,Advanced Imaging,U002,Research Tower 4 / Cryo Prep,25,true,L3_Expert,09:00,16:00,3,Maintenance_Required
+R009,RF Shielded Antenna Test Chamber,Wet_Lab,Electrical Engineering,U003,RF Annex / Chamber 2,14,true,L2_Trained,09:00,17:00,4,Available
+R010,High-Resolution Digital Slide Scanner,Microscopy,Biomedical Engineering,U002,Clinical Research Wing / Imaging Room,12,false,L2_Trained,08:30,18:00,5,In_Use

@@ -1,0 +1,21 @@
+cert_id,user_id,req_id,certificate_title,issuing_authority,issue_date,expiry_date,verification_status,raw_extracted_text
+C001,U006,Q001,Confocal Laser Safety & Alignment,Campus Imaging Safety Office,2026-03-10,2027-03-10,Verified,Campus Imaging Safety Office | Confocal Laser Safety & Alignment | Candidate: Ira Patil | Certified 10 Mar 2026 | Valid to 10 Mar 2027 | Badge L3
+C002,U006,Q002,Advanced Microscopy Hands-on,Advanced Imaging Core,2026-03-12,2027-09-12,Verified,ADV IMAGING CORE / Advanced Microscopy Hands-on / Ira Patil / completed 12-03-2026 / renewal due 12-09-2027
+C003,U004,Q003,Faculty Imaging Protocol Signoff,Biomedical Engineering Faculty Board,2026-04-02,2026-10-02,Expired,"Protocol signoff: Prof. Kavita Rao; imaging protocol approved 02 Apr 2026; valid six months, expired 02 Oct 2026"
+C004,U005,Q004,CNC Mill Safety Certification,Fabrication Safety Office,2026-01-20,2027-01-20,Verified,CNC Mill Safety Certification | Sameer Bhat | Issue date 20/01/2026 | Expires 20/01/2027 | level expert
+C005,U005,Q005,5-Axis Toolpath Workshop,Advanced Fabrication Centre,2026-02-01,2027-02-01,Verified,Advanced Fabrication Centre - Toolpath Workshop - certified to Dr. Sameer Bhat on 01 Feb 2026; expiry 01 Feb 2027
+C006,U005,Q006,Workshop Supervisor Signoff,Advanced Fabrication Centre,2026-02-02,2027-02-02,Verified,Workshop Supervisor Signoff / Sameer Bhat / signed 02 February 2026 / valid until 02 February 2027
+C007,U008,Q007,HPC Cluster Access Basics,Research Computing Office,2026-05-01,2028-05-01,Verified,HPC ACCESS BASICS | Nisha Shetty | certified 01 May 2026 | expires May 2028 | GPU queue access
+C008,U008,Q008,Research Data Handling Approval,Research Computing Office,2026-05-02,2027-05-02,Verified,Research Data Handling Approval granted to Nisha Shetty on 02 May 2026; review due 02 May 2027
+C009,U009,Q009,Cleanroom Gowning & Contamination Control,NanoFab Training Desk,2025-09-01,2026-09-01,Expired,NanoFab training slip: Cleanroom Gowning & Contamination Control; Arjun Menon; issued 01 Sep 2025; expiry 01 Sep 2026
+C010,U009,Q010,Lithography Hands-on Qualification,NanoFab Training Desk,2026-02-15,2027-02-15,Pending_Review,Lithography Hands-on Qualification; Arjun Menon; training complete 15 February 2026; awaiting administrator verification
+C011,U010,Q012,High-Speed Imaging Workshop,Experimental Mechanics Lab,2026-06-11,2028-06-11,Verified,PCCOE High-Speed Imaging Workshop Level 2 - Certified: Zoya Khan - Date: 11 Jun 2026 - Renewal: 11 Jun 2028
+C012,U010,Q013,Camera Handling and Mounting Safety,Experimental Mechanics Lab,2026-06-12,2027-06-12,Verified,Camera Handling and Mounting Safety / Zoya Khan / completed 12 June 2026 / valid through 12 June 2027
+C013,U012,Q016,Resin Handling and Printer Basics,Makerspace Operations,2026-08-05,2028-08-05,Verified,"Makerspace course Resin Handling and Printer Basics, Lina Fernandes, 05-08-2026, valid for 24 months"
+C014,U007,Q004,CNC Mill Safety Certification,Fabrication Safety Office,2024-01-01,2025-01-01,Revoked,CNC Mill Safety Certification / Dev Malhotra / credential revoked after unresolved tool handling incident / original issue 01 Jan 2024
+C015,U004,Q014,Cell Culture Aseptic Technique,Biomedical Engineering Core,2026-02-10,2027-02-10,Verified,Cell Culture Aseptic Technique certificate issued to Prof. Kavita Rao on 10 February 2026; valid to 10 February 2027
+C016,U004,Q015,Biosafety Level 2 Refresher,Biomedical Engineering Core,2026-02-12,2027-02-12,Verified,Biosafety Level 2 Refresher - Prof Kavita Rao - issued 12/02/2026 - renewal 12/02/2027
+C017,U006,Q021,Digital Pathology Scanner Induction,Clinical Research Imaging,2026-07-01,2028-07-01,Verified,Digital Pathology Scanner Induction / Ira Patil / issued 1 July 2026 / valid 24 months
+C018,U006,Q022,Specimen Data Privacy Signoff,Biomedical Engineering Faculty Board,2026-07-02,2027-07-02,Verified,Specimen Data Privacy Signoff approved for Ira Patil 02 Jul 2026; valid until 02 Jul 2027
+C019,U011,Q019,RF Exposure Safety,Electrical Safety Office,2026-01-10,2027-01-10,Pending_Review,RF Exposure Safety - Pranav Joshi - training date 10 Jan 2026; digital stamp unreadable; pending review
+C020,U003,Q017,Cryogenic Sample Safety,Advanced Imaging Core,2026-03-03,2027-03-03,Verified,"Cryogenic Sample Safety, Rahul Nair, passed 03 Mar 2026, expiry 03 Mar 2027"

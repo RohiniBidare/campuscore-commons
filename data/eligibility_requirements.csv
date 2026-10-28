@@ -1,0 +1,23 @@
+req_id,resource_id,prerequisite_name,prerequisite_type,validity_months,verification_mode
+Q001,R001,Confocal Laser Safety & Alignment,Safety_Quiz,12,Manual_Admin_Review
+Q002,R001,Advanced Microscopy Hands-on,HandsOn_Workshop,18,Manual_Admin_Review
+Q003,R001,Faculty Imaging Protocol Signoff,Faculty_Signoff,6,Manual_Admin_Review
+Q004,R002,CNC Mill Safety Certification,Safety_Quiz,12,AI_OCR_Verified
+Q005,R002,5-Axis Toolpath Workshop,HandsOn_Workshop,12,Manual_Admin_Review
+Q006,R002,Workshop Supervisor Signoff,Faculty_Signoff,6,Manual_Admin_Review
+Q007,R003,HPC Cluster Access Basics,Safety_Quiz,24,AI_OCR_Verified
+Q008,R003,Research Data Handling Approval,Faculty_Signoff,12,Manual_Admin_Review
+Q009,R004,Cleanroom Gowning & Contamination Control,Safety_Quiz,6,AI_OCR_Verified
+Q010,R004,Lithography Hands-on Qualification,HandsOn_Workshop,12,Manual_Admin_Review
+Q011,R004,Nanofab PI Signoff,Faculty_Signoff,6,Manual_Admin_Review
+Q012,R005,High-Speed Imaging Workshop,HandsOn_Workshop,24,AI_OCR_Verified
+Q013,R005,Camera Handling and Mounting Safety,Safety_Quiz,12,AI_OCR_Verified
+Q014,R006,Cell Culture Aseptic Technique,HandsOn_Workshop,12,Manual_Admin_Review
+Q015,R006,Biosafety Level 2 Refresher,Safety_Quiz,12,AI_OCR_Verified
+Q016,R007,Resin Handling and Printer Basics,Safety_Quiz,24,AI_OCR_Verified
+Q017,R008,Cryogenic Sample Safety,Safety_Quiz,12,Manual_Admin_Review
+Q018,R008,Cryo Prep Practicum,HandsOn_Workshop,12,Manual_Admin_Review
+Q019,R009,RF Exposure Safety,Safety_Quiz,24,AI_OCR_Verified
+Q020,R009,Antenna Chamber Calibration Workshop,HandsOn_Workshop,18,Manual_Admin_Review
+Q021,R010,Digital Pathology Scanner Induction,Safety_Quiz,24,AI_OCR_Verified
+Q022,R010,Specimen Data Privacy Signoff,Faculty_Signoff,12,Manual_Admin_Review

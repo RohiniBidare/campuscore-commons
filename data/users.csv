@@ -1,0 +1,15 @@
+user_id,full_name,email,role,department,reputation_score,monthly_quota_hours,used_quota_hours,penalty_strikes,status,password
+U001,Dr. Anirudh Kulkarni,anirudh.kulkarni@example.edu,Admin,Research Operations,4.8,80,18,0,Active,
+U002,Maya Deshpande,maya.deshpande@example.edu,Lab_Manager,Advanced Imaging,4.7,120,22,0,Active,
+U003,Rahul Nair,rahul.nair@example.edu,Lab_Manager,Advanced Fabrication,4.6,120,30,0,Active,
+U004,Prof. Kavita Rao,kavita.rao@example.edu,Faculty,Biomedical Engineering,4.9,100,12,0,Active,
+U005,Dr. Sameer Bhat,sameer.bhat@example.edu,PostDoc,Materials Science,4.5,70,24,0,Active,
+U006,Ira Patil,ira.patil@example.edu,Student_Grad,Biomedical Engineering,4.4,40,9,0,Active,
+U007,Dev Malhotra,dev.malhotra@example.edu,Student_UG,Mechanical Engineering,3.9,24,22,1,Active,
+U008,Nisha Shetty,nisha.shetty@example.edu,Student_Grad,Computer Science,4.2,40,4,0,Active,
+U009,Arjun Menon,arjun.menon@example.edu,Student_UG,Electrical Engineering,4.1,24,0,0,Active,
+U010,Zoya Khan,zoya.khan@example.org,Incubator_Founder,University Incubator,4.0,32,6,0,Active,
+U011,Pranav Joshi,pranav.joshi@example.org,Incubator_Founder,University Incubator,2.3,32,28,3,Suspended,
+U012,Lina Fernandes,lina.fernandes@example.edu,Student_UG,Media Technology,4.3,24,3,0,Active,
+U013,Rohini Bidare,rohini.bidare25@pcu.edu.in,Student / Researcher,Artificial intelligence,5.0,40,0,0,Active,Rohini@12345
+U014,Manasi Renuse,manasi.renuse25@pcu.edu.in,Lab Manager,CSE,5.0,120,0,0,Active,manasi@12345

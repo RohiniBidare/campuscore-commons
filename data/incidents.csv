@@ -1,0 +1,4 @@
+incident_id,booking_id,resource_id,reported_by_user_id,severity,incident_category,ai_discrepancy_summary,manager_verdict,deposit_held_credits
+I001,B008,R007,U012,Medium,Cosmetic_Damage,Pickup notes recorded a pristine build plate with no edge marks. Return notes describe a new scratch at the plate edge after prototype removal.,Pending,80
+I002,B020,R009,U010,Critical,Mechanical_Failure,"Pickup checklist confirmed the SMA adapters were present and connectors looked intact. Return checklist reports one adapter missing and a possibly bent connector, so the equipment is held for inspection.",Pending,150
+I003,B004,R003,U008,Low,Late_Return_Abandonment,"Pickup telemetry showed the GPU node healthy and the booking remains in custody at the snapshot time. No return condition has been recorded, so this is a custody follow-up rather than a confirmed damage finding.",Pending,0
