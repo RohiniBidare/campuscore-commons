@@ -20,4 +20,31 @@ Academic and institutional laboratories suffer from structural resource friction
 ---
 
 ## System Architecture & Workflow
-## 🏗️ System Architecture & Workflow
+
+```text
+[ Natural Language Asset Search ]
+                 │
+                 ▼
+[ Multi-Factor Anti-Monopoly Engine ] ──► Computes Allocation Priority (0–100)
+                 │
+                 ▼
+    [ Physical Check-In Handshake ] ──► Baseline Photo Proof & State Snapshot
+                 │
+                 ▼
+   [ Post-Use Return Inspection ]
+                 │
+      ┌──────────┴──────────┐
+      ▼                     ▼
+[Pristine Return]    [Condition Discrepancy]
+      │                     │
+      │                     ▼
+      │             [ Gemini AI Triage ] ──► Objective Incident Report
+      │                     │
+      │                     ▼
+      │             [ Manager Adjudication ] ──► Fine / Hardware Fatigue
+      │                     │
+      └──────────┬──────────┘
+                 ▼
+[ SHA-256 Tamper-Evident Ledger ] ──► Immutable Institutional Provenance
+```
+
